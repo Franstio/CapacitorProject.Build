@@ -1,0 +1,21 @@
+﻿@import "tailwindcss";
+@source "../../**/*.razor";
+@source "../../**/*.cshtml";
+@source "../../**/*.html";
+
+/* Light mode (default) */
+:root {
+    --color-primary:  #0094CE;
+    --color-primary-foreground: rgb(255, 255 ,255);
+}
+
+/* Optional dark mode */
+.dark {
+    --color-primary: rgb(56 ,189 ,248); /* lighter blue */
+    --color-primary-foreground: rgb(15, 23 ,42);
+}
+
+@theme {
+    --color-primary: var(--color-primary);
+    --color-primary-foreground: var(--color-primary-foreground);
+}
